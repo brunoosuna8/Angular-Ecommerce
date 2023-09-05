@@ -1,0 +1,25 @@
+.filter-container{
+    width: fit-content;
+    margin-left: 20%;
+}
+.filter{
+    margin: 20px 0 ;
+}
+.green-button{
+    margin: 2px;
+}
+.green-button:hover{
+    background-color: #088178;
+    color: white;
+    cursor: pointer;
+}
+.filter-input{
+    border-style: none;
+    border-bottom: 2px solid #088178;
+}
+.filter-input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #088178;
+}
+

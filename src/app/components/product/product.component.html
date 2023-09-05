@@ -1,0 +1,17 @@
+
+
+<div class="card-product" (click)="goToPurchase()">
+    <img src={{product.image}} alt="product-img">
+    <p>{{product.category}}</p>
+    <h6>{{product.title}}</h6>
+    <div class="price-shopping">
+        <p>{{product.price | currency}}</p>
+        <img 
+        src="https://brunoosuna8.github.io/casa/img/shopping-cart.jpg" 
+        alt="add-to-cart"
+        (click)="onAddToCart($event)"
+        
+        >
+    </div>
+</div>
+

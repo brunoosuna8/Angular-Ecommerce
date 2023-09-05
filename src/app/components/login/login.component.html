@@ -1,0 +1,20 @@
+<p>login works!</p>
+<!-- <button (click)="goToMain()">Login</button> -->
+<form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <label>Fisrt Name</label>
+  <input type="text" formControlName="name" />
+  <hr />
+  <label>Last Name</label>
+  <input type="text" formControlName="lastName" />
+  <hr />
+  <label>Email</label>
+  <input type="email" formControlName="email" />
+  <hr />
+  <label>Age</label>
+  <input type="number" formControlName="age" />
+  <hr />
+  <label>Password</label>
+  <input type="password" formControlName="password" />
+  <hr />
+  <button type="submit" class="button">Register</button>
+</form>

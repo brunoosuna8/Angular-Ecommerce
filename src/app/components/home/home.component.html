@@ -1,0 +1,203 @@
+<main>
+    <section class="hero">
+        
+        <div class="title">
+            <h4>Trade-in-offer</h4>
+            <h1>Super value deals <br><span>On all our Products</span></h1>
+            <h4>Save more with coupons & up to 70% off !</h4>
+            <button>Shop Now</button>
+        </div>
+    </section>
+    
+    <section class="feature">
+        <div class="benefits-card-container">
+            <div class="benefits-card">
+                <img src="https://brunoosuna8.github.io/casa/img/features/f1.png" alt="free-shipping">
+                <div class="benefits-title">
+                    Free Shipping
+                </div>
+            </div>
+
+            <div class="benefits-card">
+                <img src="https://brunoosuna8.github.io/casa/img/features/f2.png" alt="online-order">
+                <div class="benefits-title">
+                    Online Order
+                </div>
+            </div>
+
+            <div class="benefits-card">
+                <img src="https://brunoosuna8.github.io/casa/img/features/f3.png" alt="save-money">
+                <div class="benefits-title">
+                    Save money
+                </div>
+            </div>
+
+            <div class="benefits-card">
+                <img src="https://brunoosuna8.github.io/casa/img/features/f4.png" alt="promotions">
+                <div class="benefits-title">
+                    Promotions
+                </div>
+            </div>
+
+            <div class="benefits-card">
+                <img src="https://brunoosuna8.github.io/casa/img/features/f5.png" alt="happy-sell">
+                <div class="benefits-title">
+                    Happy Sell
+                </div>
+            </div>
+
+            <div class="benefits-card">
+                <img src="https://brunoosuna8.github.io/casa/img/features/f6.png" alt="f24/7-support">
+                <div class="benefits-title">
+                    F24/7 Support
+                </div>
+            </div>
+
+        </div>
+        <div class="benefits-products-container">
+            <h2>Freatured Products</h2>
+            <h4>Summer Collection New Morden Design</h4>
+            <app-filter></app-filter>
+            <div class="grid-card-container">
+                <app-product *ngFor="let product of products" [product]="product"></app-product>
+                <h2 class="no-products-founded"  *ngIf="products.length === 0">No Products Founded</h2>    
+            </div>
+
+        </div>
+        <div class="explore-more-container">
+            <h4>Repair Services</h4>
+            <h3>Up to <span>70% Off </span>- All t-Shirts & Accessories</h3>
+            <button class="green-button">Explore More</button>
+
+        </div>
+    </section>
+    <!-- <section class="new-products">
+        <div class="benefits-products-container ">
+            <h2 class="new">New Arrivals</h2>
+            <h4 class="new">Summer Collection New Morden Design</h4>
+            <div class="grid-card-container">
+                
+                <div class="card-product">
+                    <img src="./img/products/n1.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+                <div class="card-product">
+                    <img src="./img/products/n2.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+                <div class="card-product">
+                    <img src="./img/products/n3.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+                <div class="card-product">
+                    <img src="./img/products/n4.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+                <div class="card-product">
+                    <img src="./img/products/n5.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+                <div class="card-product">
+                    <img src="./img/products/n6.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+                <div class="card-product">
+                    <img src="./img/products/n7.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+                <div class="card-product">
+                    <img src="./img/products/n8.jpg" alt="">
+                    <p>adidas</p>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="price-shopping">
+                        <p>$78</p>
+                        <img src="./img/shopping-cart.jpg" alt="add-to-cart">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section> -->
+    <section class="call-to-action">
+        <div class="first-container">
+            <div class="first">
+                <h4>crazy deals</h4>
+                <h2>buy 1 get 1 free</h2>
+                <h4>The best classic dress in on sale at Cara</h4>
+                <button class="green-button">Learn More</button>
+            </div>
+            <div class="first">
+                <h4>spring/summer</h4>
+                <h2>upcomming season</h2>
+                <h4>The best classic dress in on sale at Ccara</h4>
+                <button class="green-button">Collection</button>
+            </div>
+        </div>
+        
+        <div class="second-container">
+            <div class="second">
+                <h3>SEASONAL SALE</h3>
+                <h4>Winter Collection - 50% OFF</h4>
+            </div>
+            <div class="second">
+                <h3>NEW FOOTWEAR COLLECTION</h3>
+                <h4>Spring/ Summer 2022</h4>
+            </div>
+            <div class="second">
+                <h3>T-SHIRTS</h3>
+                <h4>New Trendy Prints</h4>
+            </div>
+        </div>
+        
+
+
+    </section>
+    <section class="newsletter">
+        <div>
+            <h3>Sign Up For Newsletters</h3>
+            <h4>Get E-mail updates about our latest shop and <span>special offers</span>.</h4>
+        </div>
+        <form >
+            <input type="email" placeholder="  Your email address">
+            <button class="green-button">Sign Up</button>
+        </form>
+
+    </section>
+
+</main>

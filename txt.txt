@@ -1,0 +1,12 @@
+componentes : home,header,footer,about,cart,contact,product(purchase),shop
+tareas : 
+hacer simple fetch a todos los productos y mostrarlos en pantalla,
+iterando app-product con cada producto .check
+hacer rutas check. faltan algunas
+funcionalidad de agregar producto al carrito check.
+ver tema filtros check
+mobile check
+agregar login 
+
+angular forms:
+

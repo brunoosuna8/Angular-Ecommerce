@@ -1,0 +1,638 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+    --grey-casa: #dcdfeb;
+    --green: #088178;
+}
+html{
+    
+    
+    font-size: 62.5%;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+
+
+body{
+    width: 100%;
+    min-width: 100%;
+    min-width: 320px;
+    
+}
+
+
+h1{
+    font-size: 5em;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 7rem;
+    line-height: 64px;
+    color: #222;
+}
+h3{
+    font-size: 4.6rem;
+    line-height: 54px;
+    
+}
+h4{
+    font-size: 2rem;
+    
+    
+}
+h6{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+
+
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    min-width: 100%;
+    height: 70px;
+    background-color: #e3e6f3;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+
+
+}
+header nav{
+    
+    padding: 10px 25px;
+    width: 70px;
+    height: 100%;
+}
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+header a:hover{
+    color: #088178;
+    border-bottom: 2px solid var(--green);
+}
+.nav-left-section {
+    
+    display: flex;
+    align-items: center;
+}
+.nav-left-section img{
+    margin-left: 20px;
+}
+
+.menu{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.menu ul li{
+
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    
+}
+.menu li:last-child,#shopping-id{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    background-image: url('../../../img/bag-shopping-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.mobile{
+    display: none;
+    
+}
+.mobile-menu{
+    width: 35px;
+    height: 35px;
+    background-image: url('../../../img/menu-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*//////////////////////////// main content section ////////////////////*/
+main {
+    width: 100%;
+    height:auto;
+    min-width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:400px;
+    background-image: url('../../../img/banner/b19.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.page-header h3{
+    color: white;
+}
+.page-header h4{
+    color: white;
+    font-weight: 300;
+}
+.main-content{
+    box-shadow: 0 0  20px 24px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.main-content h2,h4{
+    color: #c3c3c3;
+}
+.main-content h4{
+    font-weight: 500;
+}
+.blog-container{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.blog-container *{
+
+}
+.blog > *{
+    margin: 20px 0;
+}
+.blog  *{
+
+}
+.text-content *{
+    margin: 20px 0 ;
+}
+
+.img-container{
+    position: relative;
+    padding: 45px 0;
+    
+}
+.img-container h2{
+    top: 6px;
+    position: absolute;
+    z-index: 1;
+    
+}
+.img-container img{
+    position: relative;
+    aspect-ratio: 4/4;
+    object-fit: cover;
+    width: 100%;
+    max-height: 600px;
+    max-width: 800px;
+    z-index: 2;
+    height: auto;
+}
+
+.blog button {
+    width: 200px;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.blog button:hover{
+    cursor: pointer;
+    color: var(--green);
+}
+/* main-content about section */
+
+.header-content-about{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:400px;
+   background-image: url('../../../img/about/banner.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+    
+}
+.header-content-about h4{
+    color: white;
+}
+.main-content-about{
+    
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    min-width: 300px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 300px;
+    margin: 0 auto;
+    
+
+}
+
+.main-content-about-img-container{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
+.main-content-about-img-container img{
+   width: 100%;
+   height: auto;
+
+    
+}
+.info-container{
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.info-container h4,abbr,marquee{
+    font-size: 2.5rem;
+    margin: 20px 0 ;
+    
+}
+.info-container h4{
+    
+    font-weight: 400;
+}
+
+
+
+/*video section*/
+.video{
+    
+    text-align: center;
+}
+.video video{
+    border-radius: 40px;
+    width: 100%;
+    max-height: 600px;
+    max-width: 800px;
+    
+}
+.video h3{
+    color: black;
+}
+.video h3,video{
+    padding: 15px;
+}
+
+/*feature section*/
+
+
+.feature{
+    min-width: 320px;
+    min-width: 100%;
+    width: 100%;
+    /* height: 150vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-card-container{
+    margin: 40px 0 ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 70px;
+    align-items: center;
+}
+.benefits-card{
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.1);
+}
+.benefits-card-container .benefits-card{
+    margin: 25px;
+    padding: 20px;
+    width: 180px;
+    height: 200px;
+    border: solid 2px #e9ecea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.benefits-card .benefits-title{
+    height: 20%;
+    width: 90%;
+    
+    border-radius: 5px;
+    background-color: #fddde4;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+.benefits-card:nth-child(2) div{
+    background-color: #cdebbc;
+    
+}
+.benefits-card:nth-child(3) div{
+    background-color: #d1e8f2;
+    
+}
+.benefits-card:nth-child(4) div{
+    background-color: #cdd4f8;
+    
+}
+.benefits-card:nth-child(5) div{
+    background-color: #f6dbf6;
+    
+}
+.benefits-card:nth-child(6) div{
+    background-color: #fff2e5;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////news letter section////////////////// */
+.newsletter{
+    width: 100%;
+    height: 150px;
+    background-color: #051732;
+    background-image: url('../../../img/banner/b14.png');
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.newsletter h3{
+    color: white;
+    font-size: 2.8rem;
+}
+.newsletter h4{
+    color: #a5a7a9;
+    font-weight: 300;
+}
+.newsletter span{
+    color: #d7a44c;
+}
+
+
+.newsletter form{
+    
+    height: 40px;
+    width: 500px;
+    
+}
+.newsletter input{
+    border-radius: 5px;
+    height:100%;
+    width: 80%;
+}
+.newsletter button{
+    border-radius: 5px;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #088178;
+    color: white;
+    height: 100%;
+    width: 19%;
+    border: none;
+}
+
+/*////////////////footer section ///////////////////*/
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: 550px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    line-height: 40px;
+
+}
+footer a{
+    text-decoration: none;
+    color: #000000;
+}
+footer div:nth-child(1) img{
+    
+    width: 180px;
+}
+footer div{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.mobile-store:nth-child(1) a{
+    margin: 10px;
+    width: 70%;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    background-image: url('../../../img/pay/app.jpg');
+}
+.mobile-store:nth-child(2) a{
+    margin: 10px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--green);
+    background-image: url('../../../img/pay/play.jpg');
+    
+}
+.pay-methods{
+    
+    height: 50px;
+    width: 100%;
+    background-image: url('../../../img/pay/pay.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:1024px){
+    .main-content{
+        max-width: 1300px;
+    }
+    .blog h3{
+        font-size: 3rem;
+    }
+    .blog{
+        display: flex;
+        flex-direction: row;
+    }
+    .blog .text-content{
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-container img {
+        aspect-ratio: 4/3;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:770px){
+    .nav-right-section{
+        position: relative;
+        width: 130px;
+        height: 100%;
+        
+    }
+    .menu{
+        display: none;
+        
+    }
+    .mobile{
+        
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu {
+        visibility:hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 200px;
+        background-color: var(--grey-casa);
+        box-shadow: 0 40px 60px rgba(0,0,0,0.2);
+        
+        
+        
+    
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50%;
+        
+    
+    }
+    .menu .close-button{
+        margin: 10px;
+        opacity: 0.4;
+        background-image: url('../../../img/xmark-solid.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 20px;
+        height: 30px;
+        top: 3px;
+        right: 155px;
+    }
+    
+    
+}
+

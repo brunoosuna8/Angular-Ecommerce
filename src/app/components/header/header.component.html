@@ -1,0 +1,32 @@
+<header>
+    <div class="nav nav-left-section">
+    <img src="https://brunoosuna8.github.io/casa/img/logo.png" alt="home-logo" class="home-logo">
+    </div>
+    <div class="nav nav-right-section">
+        
+        <div class="menu">
+            <ul>
+                <li><a routerLink="/home">Home</a> </li>
+                <!-- <li><a routerLink="/shop">Shop</a></li> -->
+                <li><a routerLink="/blog">Blog</a></li>
+                <li><a routerLink="/about">About</a></li>
+                <li><a routerLink="/contact">Contact</a></li>
+                <a routerLink="/cart">
+                    <li>
+                        <span id="cart-count">
+                            {{count}}  
+                        </span></li></a>
+        
+                <!-- <li><a routerLink="/cart"><span id="cart-count">{{count}}</span></a></li> -->
+
+            </ul>
+            <div class="close-button" (click)="onClick()" ></div>
+        </div>
+        <div class="mobile">
+            <div class="mobile-menu" (click)="onClick()"></div>
+            <!-- <li id="shopping-id"></li> -->
+            
+        </div>
+        
+    </div>
+</header>

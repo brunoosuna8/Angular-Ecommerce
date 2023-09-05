@@ -1,0 +1,40 @@
+<div class="filter-container">
+  <div class="filter">
+    By Name:
+    <input type="text" class="filter-input" [(ngModel)]="inputFilter" />
+    <button class="green-button" (click)="onFilter('name', inputFilter)">
+      Search
+    </button>
+  </div>
+  <div class="filter">
+    Alfabetic:
+    <button class="green-button" (click)="onFilter('ascending')">
+      Ascending
+    </button>
+    <button class="green-button" (click)="onFilter('descending')">
+      Descending
+    </button>
+  </div>
+  <div class="filter">
+    Order By:
+    <button class="green-button" (click)="onFilter('cheap')">More Cheap</button>
+    <button class="green-button" (click)="onFilter('expensive')">
+      More Expensive
+    </button>
+  </div>
+  <div class="filter">
+    Reset:
+    <button class="green-button" (click)="onFilter('reset')">Reset</button>
+  </div>
+</div>
+<div>
+  <!-- <h1>sdsdsd</h1>
+  <div>sds</div> -->
+</div>
+
+<!-- <Label>Search</Label> -->
+
+<!-- <button  (click)="onFilter('categories',undefined,'men\'s clothing')">men's clothing</button>
+<button (click)="onFilter('categories',undefined,'jewelery')">jewelery</button>
+<button (click)="onFilter('categories',undefined,'electronics')">electronics</button>
+<button (click)="onFilter('categories',undefined,'women\'s clothing')">women's clothing</button> -->

@@ -1,0 +1,70 @@
+<section class="header-content-about">
+  <div class="page-header-about">
+    <h3>#cart</h3>
+    <h4>Add your coupon code & SAVE up to 70%!</h4>
+  </div>
+</section>
+<section class="products-container">
+  <div class="info-products-container">
+    <div class="info-product">REMOVE</div>
+    <div class="info-product image">IMAGE</div>
+    <div class="info-product product">PRODUCT</div>
+    <div class="info-product price">PRICE</div>
+    <div class="info-product quantity">QUANTITY</div>
+    <div class="info-product subtotal">SUBTOTAL</div>
+  </div>
+  <app-cart-product
+    *ngFor="let cartProduct of cartProducts"
+    [cartProduct]="cartProduct"
+  ></app-cart-product>
+  <div class="buy">
+    <h4>Total: {{ total | currency }}</h4>
+    <button class="green-button">Buy</button>
+  </div>
+
+  <!-- <div class="cart-product">
+        <div class="remove"  ><img src="./img/xmark-solid.svg" alt="delete-button"></div>
+        <div class="image"><img src="./img/products/f1.jpg" alt=""></div>
+        <div class="product"><h6>Cartoon Astronaut T-Shirts</h6></div>
+        <div class="price"><h6>$118.19</h6></div>
+        <div class="quantity"><input type="number" placeholder="1"></div>
+        <div class="subtotal"><h6>$118.19</h6></div>
+
+    </div>
+    <div class="cart-product">
+        <div class="remove" ><img src="./img/xmark-solid.svg" alt="delete-button"></div>
+        <div class="image"><img src="./img/products/f2.jpg" alt=""></div>
+        <div class="product"><h6>Cartoon Astronaut T-Shirts</h6></div>
+        <div class="price"><h6>$118.19</h6></div>
+        <div class="quantity"><input type="number" placeholder="1"></div>
+        <div class="subtotal"><h6>$118.19</h6></div>
+
+    </div>
+    <div class="cart-product">
+        <div class="remove" ><img src="./img/xmark-solid.svg" alt="delete-button"></div>
+        <div class="image"><img src="./img/products/f3.jpg" alt=""></div>
+        <div class="product"><h6>Cartoon Astronaut T-Shirts</h6></div>
+        <div class="price"><h6>$118.19</h6></div>
+        <div class="quantity"><input type="number" placeholder="1"></div>
+        <div class="subtotal"><h6>$118.19</h6></div>
+
+    </div>
+    <div class="cart-product">
+        <div class="remove" ><img src="./img/xmark-solid.svg" alt="delete-button"></div>
+        <div class="image"><img src="./img/products/f4.jpg" alt=""></div>
+        <div class="product"><h6>Cartoon Astronaut T-Shirts</h6></div>
+        <div class="price"><h6>$118.19</h6></div>
+        <div class="quantity"><input type="number" placeholder="1"></div>
+        <div class="subtotal"><h6>$118.19</h6></div>
+
+    </div>
+    <div class="cart-product">
+        <div class="remove" ><img src="./img/xmark-solid.svg" alt="delete-button"></div>
+        <div class="image"><img src="./img/products/f8.jpg" alt=""></div>
+        <div class="product"><h6>Cartoon Astronaut T-Shirts</h6></div>
+        <div class="price"><h6>$118.19</h6></div>
+        <div class="quantity"><input type="number" placeholder="1"></div>
+        <div class="subtotal"><h6>$118.19</h6></div>
+
+    </div> -->
+</section>

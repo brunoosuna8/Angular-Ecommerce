@@ -1,0 +1,35 @@
+<section class="product" *ngIf="product">
+    <div class="product-photo">
+        <div class="main-photo">
+            <img class="product-select-show" src={{product.image}}  alt="main-photo">
+        </div>
+        <!-- <div class="row-photo"> -->
+            <!-- <img class="product-select"  src="https://brunoosuna8.github.io/casa/img/products/f1.jpg" alt="photo1"> -->
+            <!-- <img class="product-select" src="https://brunoosuna8.github.io/casa/img/products/f2.jpg" alt="photo2">
+            <img class="product-select" src="https://brunoosuna8.github.io/casa/img/products/f3.jpg" alt="photo3">
+            <img class="product-select" src="https://brunoosuna8.github.io/casa/img/products/f4.jpg" alt="photo4"> -->
+
+        <!-- </div> -->
+
+    </div>
+    <div class="info">
+        <h4>{{product.title}}</h4>
+        <h3>Men's Fashion T Shirt</h3>
+        <p class="price">{{product.price | currency}}</p>
+        <select name="select-size">
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            <option value="Small">Small</option>
+            <option value="Large">Large</option>
+        </select>
+        <form class="add-to-card">
+            
+            <input type="number" id="amount" required min="1" [(ngModel)]="quantity" name="quantity">
+            <button class="green-button" (click)="onAddToCart()">Add To Cart</button>
+        </form>
+        <h3>Product Details</h3>
+        <h4>{{product.description}}</h4>
+    </div>
+
+
+</section>

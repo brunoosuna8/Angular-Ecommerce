@@ -1,0 +1,112 @@
+.products-container{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x:scroll;
+    margin-bottom: 150px;
+    
+    
+}
+
+.info-products-container{
+    margin-top: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    
+}
+
+.info-products-container div,.cart-product div{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+}
+.info-products-container .product ,.info-products-container .image,.cart-product .product,.cart-product .image{
+    width: 300px;
+}
+
+.cart-product{
+    
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    border-bottom: 1px solid grey;
+    
+    
+    
+}
+
+.cart-product .remove img{
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    
+    
+}
+.cart-product div{
+    height: 100%;
+    
+}
+.quantity input{
+width: 40px;
+}
+
+.image img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/*//////////////////////////// header content section ////////////////////*/
+
+.header-content-about{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:400px;
+   background-image: url('../../../img/about/banner.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+    
+}
+.header-content-about h3{
+    font-size: 4.6rem;
+}
+
+.header-content-about h4{
+    color: white;
+}
+
+.buy{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.green-button{
+    width: auto;
+    padding: 0 20px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+.green-button:hover{
+    background-color:#088178 ;
+    outline: 2px solid black;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,20 @@
+<div class="cart-product">
+    <div class="remove" (click)="onDeleteFromCart()"><img src="https://brunoosuna8.github.io/casa/img/xmark-solid.svg" alt="delete-button"></div>
+    
+    <div class="image">  
+        <a id="go-to-purchase-product" [routerLink]="'/purchase/' + cartProduct.id">
+        <img src={{cartProduct.image}} alt="">
+
+        </a>
+    
+    </div>
+    <div class="product">
+        <a id="go-to-purchase-product" [routerLink]="'/purchase/' + cartProduct.id">
+        <h6>{{cartProduct.title}}</h6>
+    </a>
+    </div>
+    <div class="price"><h6>{{cartProduct.price | currency}}</h6></div>
+    <div class="quantity"><input type="number" required min="1" value="1" placeholder={{quantity}} [(ngModel)]="quantity" (ngModelChange)="onQuantityChange()"/></div>
+    <div class="subtotal"><h6>{{subTotalProduct | currency}}</h6></div>
+
+</div>
