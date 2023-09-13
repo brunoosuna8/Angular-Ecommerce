@@ -1,0 +1,70 @@
+.benefits-card-container {
+  margin: 40px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 70px;
+  align-items: center;
+}
+.benefits-card {
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+}
+.benefits-card-container .benefits-card {
+  margin: 25px;
+  padding: 20px;
+  width: 180px;
+  height: 200px;
+  border: solid 2px #e9ecea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.benefits-card .benefits-title {
+  height: auto;
+  width: 90%;
+
+  border-radius: 5px;
+  /* background-color: #fddde4; */
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 3px;
+}
+.benefits-card:nth-child(1) div {
+  background-color: #fddde4;
+}
+.benefits-card:nth-child(2) div {
+  background-color: #cdebbc;
+}
+.benefits-card:nth-child(3) div {
+  background-color: #d1e8f2;
+}
+.benefits-card:nth-child(4) div {
+  background-color: #cdd4f8;
+}
+.benefits-card:nth-child(5) div {
+  background-color: #f6dbf6;
+}
+.benefits-card:nth-child(6) div {
+  background-color: #fff2e5;
+}
+
+.benefits-products-container {
+  margin: 0 auto;
+  max-width: 1700px;
+}
+.benefits-products-container h2 {
+  text-align: center;
+}
+.benefits-products-container h4 {
+  font-weight: 400;
+  color: #a5a7a9;
+  margin: 30px 0;
+  text-align: center;
+}

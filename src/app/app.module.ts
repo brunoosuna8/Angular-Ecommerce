@@ -20,6 +20,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FilterComponent } from './components/filter/filter.component';
+import { BenefitsComponent } from './components/benefits/benefits.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { FilterComponent } from './components/filter/filter.component';
     CartProductComponent,
     BlogComponent,
     FilterComponent,
+    BenefitsComponent,
   ],
   imports: [
     CommonModule,

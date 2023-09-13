@@ -201,7 +201,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.benefits-card-container {
+/* .benefits-card-container {
   margin: 40px 0;
   width: 100%;
   height: auto;
@@ -254,7 +254,7 @@ main {
 }
 .benefits-card:nth-child(6) div {
   background-color: #fff2e5;
-}
+} */
 
 .benefits-products-container {
   margin: 0 auto;
